@@ -13,6 +13,12 @@ mvnw.cmd spring-boot:run
 ```
 
 ## Linux:
+
+* Dar permisos de ejecución
+```
+chmod +x mvnw
+```
+* Ejecutar
 ```
 ./mvnw spring-boot:run
 ```
