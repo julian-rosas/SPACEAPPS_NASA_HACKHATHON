@@ -1,4 +1,4 @@
-package hakaton.nasa.unam.spaceapp;
+package hackathon.nasa.unam.spaceapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
