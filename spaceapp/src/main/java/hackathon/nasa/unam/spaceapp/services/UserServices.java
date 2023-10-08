@@ -40,7 +40,6 @@ public class UserServices {
      */
 
     public boolean createUser(User user) {
-        //System.out.println(user.toString());
         List<User> users = userRepository.getUserByEmail(user.getEmail());
         
         if(users.size() > 0)

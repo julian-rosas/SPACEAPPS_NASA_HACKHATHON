@@ -101,10 +101,4 @@ import jakarta.persistence.*;
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return (this.name + " es el nombre " + this.id + " es el id " + this.email + " es el email " + this.password
-                + " es el pswd ");
-    }
-
 }
