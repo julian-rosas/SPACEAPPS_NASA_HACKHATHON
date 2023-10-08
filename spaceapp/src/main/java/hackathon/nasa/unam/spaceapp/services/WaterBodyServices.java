@@ -14,7 +14,9 @@ public class WaterBodyServices {
     WaterBodyRepository waterBodyRepository;
 
     public List<WaterBody> listAll(WaterBody waterBody){
-        List<WaterBody> wtrbodies = waterBodyRepository.getCloser();
+        List<WaterBody> wtrbodies = waterBodyRepository.getCloser(waterBody.getLat(),waterBody.getLong());
+        
+        
         return wtrbodies;
     }
 }
