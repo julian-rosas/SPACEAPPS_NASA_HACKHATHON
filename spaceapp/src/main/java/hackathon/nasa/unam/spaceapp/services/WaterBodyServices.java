@@ -9,12 +9,17 @@ import hackathon.nasa.unam.spaceapp.repositories.WaterBodyRepository;
 
 @Service
 public class WaterBodyServices {
-    /*
+   
     @Autowired
     WaterBodyRepository waterBodyRepository;
-*//*
     public List<WaterBody> listAll(WaterBody waterBody){
-        //List<WaterBody> wtrbodies = waterBodyRepository.getCloser();
+      
+        List<WaterBody> wtrbodies = waterBodyRepository.getCloser();
         return null;
-    }*/
+    }
+        List<WaterBody> wtrbodies = waterBodyRepository.getCloser(waterBody.getLat(),waterBody.getLong());
+        
+        
+        return wtrbodies;
+    }
 }
