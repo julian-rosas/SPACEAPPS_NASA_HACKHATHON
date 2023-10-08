@@ -8,16 +8,16 @@ import hackathon.nasa.unam.spaceapp.repositories.UserRepository;
 
 @Service
 public class UserSevices {
-    
+
     @Autowired
     UserRepository userRepository;
 
-    public void login(User user){
+    public void login(User user) {
 
     }
-    
-    
-    public void createUser(User user){
+
+    public void createUser(User user) {
+        System.out.println(user.toString());
         userRepository.save(user);
     }
 }

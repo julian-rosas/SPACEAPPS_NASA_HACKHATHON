@@ -1,0 +1,1 @@
+INSERT INTO userApp(nameUserApp,mail,userPassword) VALUES	('fulanito', 'fulanito@gmail.com', '123');
