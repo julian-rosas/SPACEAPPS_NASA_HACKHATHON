@@ -2,7 +2,7 @@
 
 * Challenge: What's up with this water?
 
-* Teem Name: Who?
+* Team Name: Who?
 
 # Backend
 
