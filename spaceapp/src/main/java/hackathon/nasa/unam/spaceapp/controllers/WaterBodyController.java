@@ -3,10 +3,7 @@ package hackathon.nasa.unam.spaceapp.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import hackathon.nasa.unam.spaceapp.models.WaterBody;
 import hackathon.nasa.unam.spaceapp.services.WaterBodyServices;
@@ -18,11 +15,8 @@ public class WaterBodyController {
     @Autowired
     private WaterBodyServices waterBodyServices;
 
-/*
-    @PostMapping("/listall")
-    public List<WaterBody> listAll(@RequestBody WaterBody waterBody){
-        return waterBodyServices.listAll(waterBody);
+    @PostMapping("/listall/{lat}/{lng}")
+    public List<WaterBody> listAll(@PathVariable String lat, @PathVariable String lng){
+        return waterBodyServices.listAll(lat, lng);
     }
-    */
-
 }
