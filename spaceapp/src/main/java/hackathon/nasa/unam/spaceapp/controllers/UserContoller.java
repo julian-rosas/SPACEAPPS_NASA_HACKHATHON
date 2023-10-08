@@ -25,7 +25,7 @@ public class UserContoller {
 
 
     @PostMapping("/login/")
-    public void login(@RequestBody User user){
-        userServices.login(user);
+    public boolean login(@RequestBody User user){
+        return userServices.login(user);
     }
 }
