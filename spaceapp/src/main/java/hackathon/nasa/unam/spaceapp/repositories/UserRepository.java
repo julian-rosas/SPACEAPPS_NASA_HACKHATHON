@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 import hackathon.nasa.unam.spaceapp.models.User;
 /**
- * Repository in charge of doing queries to the User table in the database.
+ * Repository in charge of doing queries regarding User database table
  */
 public interface UserRepository extends CrudRepository<User,Integer>{
 

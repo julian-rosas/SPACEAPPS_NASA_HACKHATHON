@@ -8,12 +8,20 @@ import org.springframework.stereotype.Service;
 import hackathon.nasa.unam.spaceapp.models.Species;
 import hackathon.nasa.unam.spaceapp.repositories.SpeciesRepository;
 
+/**
+ * Service in charge of giving the Species entity logic behavior
+ */
 @Service
 public class SpeciesServices {
 
     @Autowired
     SpeciesRepository speciesRepository;
 
+    /**
+     * Species getter logic
+     * @param species
+     * @return Species
+     */
     public Species getSpecies(Species species) {
         List<Species> sp = speciesRepository.getSpeciesByName(species.getName());
 

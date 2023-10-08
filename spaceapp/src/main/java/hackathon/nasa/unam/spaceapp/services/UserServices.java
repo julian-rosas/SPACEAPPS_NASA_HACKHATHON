@@ -10,7 +10,7 @@ import hackathon.nasa.unam.spaceapp.repositories.UserRepository;
 import hackathon.nasa.unam.spaceapp.utils.Hash;
 
 /**
- * Service in charge of giving the User entinty logic behavior 
+ * Service in charge of giving the User entity logic behavior 
  */
 @Service
 public class UserServices {

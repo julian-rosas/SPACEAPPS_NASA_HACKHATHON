@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import hackathon.nasa.unam.spaceapp.models.Species;
 import hackathon.nasa.unam.spaceapp.services.SpeciesServices;
 
+/**
+ * Controller in charge of posting and getting species requests.
+ */
 @RestController
 @RequestMapping("/species")
 public class SpeciesController {
@@ -19,6 +22,11 @@ public class SpeciesController {
     @Autowired
     private SpeciesServices speciesServices;
 
+    /**
+     * Get species information  
+     * @param species
+     * @return requested species
+     */
     @PostMapping("/getSpecie/")
     public Species getSpecies(@RequestBody Species species) {
         Species speciesResult = speciesServices.getSpecies(species);
@@ -28,7 +36,7 @@ public class SpeciesController {
     }
 
     /**
-     * Manges the error BAD_REQUEST.
+     * Manages the error BAD_REQUEST.
      * 
      * @param illegalArgumentException the error.
      * @return {@link HttpStatus} BAD_REQUEST with a message.
