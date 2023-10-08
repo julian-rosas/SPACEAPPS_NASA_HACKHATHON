@@ -25,14 +25,10 @@ public class UserServices {
      */
     public boolean login(User user) {
         List<User> usrlist = userRepository.getUserByEmail(user.getEmail());
-        
-        if(usrlist.size() > 0){
+        if(usrlist.size() == 1){
             String receivedpasswd = user.getPassword();
-            String usrpasswd = usrlist.get(0).getEmail();
-            
-            if(receivedpasswd.equals(usrpasswd) && Hash.verifyHash(receivedpasswd, usrpasswd))
-                return true;
-                
+            String usrpasswd = usrlist.get(0).getPassword();
+           return Hash.verifyHash(usrpasswd,receivedpasswd);
         }
 
         return false;
@@ -45,15 +41,15 @@ public class UserServices {
 
     public boolean createUser(User user) {
         //System.out.println(user.toString());
-        List<User> users = (List<User>) userRepository.getUserByEmail(user.getEmail());
+        List<User> users = userRepository.getUserByEmail(user.getEmail());
         
         if(users.size() > 0)
-            return true;
+            return false;
 
         String psswdHash = Hash.hashing(user.getPassword());
         user.setPassword(psswdHash);
 
         userRepository.save(user);
-        return false;
+        return true;
     }
 }
