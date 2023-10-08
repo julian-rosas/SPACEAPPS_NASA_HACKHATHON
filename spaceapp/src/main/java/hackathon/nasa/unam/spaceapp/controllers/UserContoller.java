@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import hackathon.nasa.unam.spaceapp.models.User;
 import hackathon.nasa.unam.spaceapp.services.UserSevices;
 
+/**
+ * User controller in charge of posting and getting user oriented requests.
+ */
 @RestController
 @RequestMapping("/user")
 public class UserContoller {
@@ -17,13 +20,20 @@ public class UserContoller {
     @Autowired
     private UserSevices userServices;
 
-    
+    /**
+     * Controller for creating user
+     * @param user
+     */
     @PostMapping("/create/")
-    public void createUser(@RequestBody User user){
-        userServices.createUser(user);
+    public boolean createUser(@RequestBody User user){
+        return userServices.createUser(user);
     }
 
-
+    /**
+     * Controller for user login.
+     * @param user
+     * @return true if user was logged successfully, otherwise false.
+     */
     @PostMapping("/login/")
     public boolean login(@RequestBody User user){
         return userServices.login(user);
