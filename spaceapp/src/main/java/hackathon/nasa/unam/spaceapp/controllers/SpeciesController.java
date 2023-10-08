@@ -1,8 +1,10 @@
 package hackathon.nasa.unam.spaceapp.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,17 +15,27 @@ import hackathon.nasa.unam.spaceapp.services.SpeciesServices;
 @RestController
 @RequestMapping("/species")
 public class SpeciesController {
-    
 
     @Autowired
     private SpeciesServices speciesServices;
 
-
-    @GetMapping("/getSpecie/")
-    public Species getSpecies(@RequestBody Species species){
-        return speciesServices.getSpecies(species);
+    @PostMapping("/getSpecie/")
+    public Species getSpecies(@RequestBody Species species) {
+        Species speciesResult = speciesServices.getSpecies(species);
+        if (speciesResult == null)
+            throw new IllegalArgumentException("There are not species with that name");
+        return speciesResult;
     }
 
-    
+    /**
+     * Manges the error BAD_REQUEST.
+     * 
+     * @param illegalArgumentException the error.
+     * @return {@link HttpStatus} BAD_REQUEST with a message.
+     */
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<String> handleCustomException(IllegalArgumentException illegalArgumentException) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(illegalArgumentException.getMessage());
+    }
 
 }

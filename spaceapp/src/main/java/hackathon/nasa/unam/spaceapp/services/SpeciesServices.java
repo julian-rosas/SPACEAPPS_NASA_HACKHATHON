@@ -1,5 +1,7 @@
 package hackathon.nasa.unam.spaceapp.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,14 +10,16 @@ import hackathon.nasa.unam.spaceapp.repositories.SpeciesRepository;
 
 @Service
 public class SpeciesServices {
-    
 
     @Autowired
     SpeciesRepository speciesRepository;
 
+    public Species getSpecies(Species species) {
+        List<Species> sp = speciesRepository.getSpeciesByName(species.getName());
 
-    public Species getSpecies(Species species){
-        Species sp =  speciesRepository.getSpeciesByName(species.getName());
-        return sp;
+        if (sp.size() == 0) {
+            return null;
+        }
+        return sp.get(0);
     }
 }

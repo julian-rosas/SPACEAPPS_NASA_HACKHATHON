@@ -9,39 +9,37 @@ import jakarta.persistence.*;
 public class Species {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "specieid")
     private int id;
 
-    @Column(name = "waterbody")
+    @Column(name = "waterbodyid")
     private int waterbodyid;
 
-    @Column(name= "namespecie")
+    @Column(name = "namespecie")
     private String name;
 
-
-    public int getID(){
+    public int getID() {
         return this.id;
     }
 
-    public int getWaterBodyID(){
+    public int getWaterBodyID() {
         return this.waterbodyid;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
-
-    public void setID(int id){
+    public void setID(int id) {
         this.id = id;
     }
 
-    public void setWaterBody(int id){
+    public void setWaterBody(int id) {
         this.waterbodyid = id;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
-
 
 }
