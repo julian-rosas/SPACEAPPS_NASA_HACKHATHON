@@ -12,8 +12,9 @@ public class UserSevices {
     @Autowired
     UserRepository userRepository;
 
-    public void login(User user) {
-
+    public boolean login(User user) {
+        System.out.println(user.toString());
+        return true;
     }
 
     public void createUser(User user) {
