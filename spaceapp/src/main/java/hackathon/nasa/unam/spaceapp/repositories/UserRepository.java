@@ -6,9 +6,16 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 import hackathon.nasa.unam.spaceapp.models.User;
-
+/**
+ * Repository in charge of doing queries to the User table in the database.
+ */
 public interface UserRepository extends CrudRepository<User,Integer>{
 
+    /**
+     * User getter query
+     * @param email
+     * @return List<User>
+     */
     @Query("SELECT * FROM userapp WHERE email = :emailparam")
     public List<User> getUserByEmail(@Param("emailparam") String email);
 
