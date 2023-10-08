@@ -1,4 +1,4 @@
-package hakaton.nasa.unam.spaceapp;
+package hackathon.nasa.unam.spaceapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

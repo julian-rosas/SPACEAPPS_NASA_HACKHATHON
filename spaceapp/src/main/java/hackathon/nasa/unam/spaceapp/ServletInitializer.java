@@ -1,4 +1,4 @@
-package hakaton.nasa.unam.spaceapp;
+package hackathon.nasa.unam.spaceapp;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
