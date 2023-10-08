@@ -1,10 +1,10 @@
 package hackathon.nasa.unam.spaceapp.models;
 import jakarta.persistence.*;
 
-@Entity
-@Table(name = "waterbody")
+/*@Entity
+@Table(name = "waterbody")*/
 public class WaterBody {
-
+/*
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "waterbodyid")
@@ -110,6 +110,6 @@ public class WaterBody {
     public void setOrganization(String org){
         this.organization = org;
     }
-
+*/
 
 }
