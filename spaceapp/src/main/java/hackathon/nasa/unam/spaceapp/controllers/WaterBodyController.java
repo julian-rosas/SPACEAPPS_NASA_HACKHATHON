@@ -18,9 +18,11 @@ public class WaterBodyController {
     @Autowired
     private WaterBodyServices waterBodyServices;
 
-
+/*
     @PostMapping("/listall")
     public List<WaterBody> listAll(@RequestBody WaterBody waterBody){
         return waterBodyServices.listAll(waterBody);
     }
+    */
+
 }

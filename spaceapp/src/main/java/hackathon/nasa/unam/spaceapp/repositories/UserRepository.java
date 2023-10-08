@@ -16,7 +16,7 @@ public interface UserRepository extends CrudRepository<User,Integer>{
      * @param email
      * @return List<User>
      */
-    @Query("SELECT * FROM userapp WHERE email = :emailparam")
+    @Query(nativeQuery = true , value = "SELECT * FROM userapp WHERE mail = :emailparam")
     public List<User> getUserByEmail(@Param("emailparam") String email);
 
 

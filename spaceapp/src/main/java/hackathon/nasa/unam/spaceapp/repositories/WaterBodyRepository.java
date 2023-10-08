@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import hackathon.nasa.unam.spaceapp.models.WaterBody;
 
-public interface WaterBodyRepository extends CrudRepository<WaterBody,Integer> {
+public interface WaterBodyRepository /*extends CrudRepository<WaterBody,Integer>*/ {
     
 
    // @Query("SELECT * FROM waterbody WHERE ()")

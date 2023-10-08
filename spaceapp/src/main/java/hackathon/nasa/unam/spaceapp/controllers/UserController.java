@@ -3,22 +3,21 @@ package hackathon.nasa.unam.spaceapp.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import hackathon.nasa.unam.spaceapp.models.User;
-import hackathon.nasa.unam.spaceapp.services.UserSevices;
+import hackathon.nasa.unam.spaceapp.services.UserServices;
 
 /**
  * User controller in charge of posting and getting user oriented requests.
  */
 @RestController
 @RequestMapping("/user")
-public class UserContoller {
+public class UserController {
     
     @Autowired
-    private UserSevices userServices;
+    private UserServices userServices;
 
     /**
      * Controller for creating user

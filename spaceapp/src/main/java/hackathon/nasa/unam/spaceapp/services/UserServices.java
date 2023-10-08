@@ -13,7 +13,7 @@ import hackathon.nasa.unam.spaceapp.utils.Hash;
  * Service in charge of giving the User entinty logic behavior 
  */
 @Service
-public class UserSevices {
+public class UserServices {
 
     @Autowired
     UserRepository userRepository;
