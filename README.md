@@ -6,42 +6,53 @@
 
 # Backend
 
-## Getting Started:
+### Requirements:
 
 * JDK Java (Version greater than 17). 
 * Apache Maven (Version 3.9.3).
 * Postgres (Version 16).
 
-* Database Configuration.
+## Database Configuration.
 **Modify application.properties file.**
 
-**Create Postgres database with the ddl.sql and dml.sql files.**
+Ejemplo > spring.datasource.url=jdbc:postgresql://localhost:5432/spaceapp_db
+
+This way we're connecting to a our database called spaceapp_db, listenint to the port 5432 in the localhost.
+
+# Create Postgres database 
+
+You can use the ddl.sql and dml.sql files to create the database and insert data.
 
 ## Usage:
 
-* Windows:
+### To start the server you can use the following commands:
+
+> Windows:
 ```
 mvnw.cmd spring-boot:run
 ```
 
-* Linux:
+> Linux:
 
 **_Execution permissions_**
 ```
 chmod +x mvnw
 ```
-* Execute
+**Execute**
 ```
 ./mvnw spring-boot:run
 ```
 
+After that, the server is running in the background.
+
 # Frontend.
 
-## Geting started
+### Requirements:
 
-* NodeJs 
-* Expo Go Mobile app
-* React Native
+For this project we use the following technologies:
+* NodeJs : 18.0.1
+* Expo : 49.0.13
+* React Native : 0.72.5
 
 ## Installation
 
