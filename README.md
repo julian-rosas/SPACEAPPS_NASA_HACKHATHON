@@ -78,3 +78,27 @@ npx expo start
 
 
 * To see the view, with Expo Go Mobile app scan QR code.
+
+# Contributors
+
+### >> EMILIANO LÓPEZ PRADO
+
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SrSujeto55) 
+
+### >> JULIAN ROSAS SCULL
+
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/julian-rosas)
+
+### >> RICARDO FLORES MATA
+
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/richardfm77) 
+
+### >> MONSE ARRIAGA
+
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/monse-arriaga) 
+
+### >> FERNANDA OSORIO
+
+
+### >> MONICA 
+
