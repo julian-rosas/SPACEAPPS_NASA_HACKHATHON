@@ -81,24 +81,27 @@ npx expo start
 
 # Contributors
 
-### >> EMILIANO LÓPEZ PRADO
+### EMILIANO LÓPEZ PRADO
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SrSujeto55) 
 
-### >> JULIAN ROSAS SCULL
+### JULIAN ROSAS SCULL
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/julian-rosas)
 
-### >> RICARDO FLORES MATA
+### RICARDO FLORES MATA
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/richardfm77) 
 
-### >> MONSE ARRIAGA
+### MONSE ARRIAGA
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/monse-arriaga) 
 
-### >> FERNANDA OSORIO
+### FERNANDA OSORIO
 
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FernandaOsorioMorales) 
 
-### >> MONICA 
+### MONICA 
+
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/monica.milla.7921/)
 
