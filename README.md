@@ -15,10 +15,11 @@
 ## Database Configuration.
 *Modify application.properties file.*
 
+Example:
 
-Ejemplo > spring.datasource.url=jdbc:postgresql://localhost:5432/spaceapp_db
+* spring.datasource.url=jdbc:postgresql://localhost:5432/spaceapp_db
 
-This way we're connecting to a our database called spaceapp_db, listenint to the port 5432 in the localhost.
+This way we're connecting to a our database called spaceapp_db, listening to the port 5432 in the localhost.
 
 # Create Postgres database 
 
@@ -30,24 +31,25 @@ You can use the ddl.sql and dml.sql files to create the database and insert data
 
 > Windows:
 
+To start the server:
+```
 mvnw.cmd spring-boot:run
+```
+
+
 
 > Linux:
 
 *Execution permissions*
-
+```
 chmod +x mvnw
-
-*Execute*
-
-./mvnw spring-boot:run
-
-
-After that, the server is running in the background
 ```
-**Execute**
+
+To start the server:
 ```
 ./mvnw spring-boot:run
+```
+
 
 # Frontend.
 
