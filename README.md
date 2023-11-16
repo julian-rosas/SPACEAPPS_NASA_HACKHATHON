@@ -50,16 +50,6 @@ To start the server:
 ./mvnw spring-boot:run
 ```
 
-
-# Frontend.
-
-### Requirements:
-
-For this project we use the following technologies:
-* NodeJs : 18.0.1
-* Expo : 49.0.13
-* React Native : 0.72.5
-
 # Frontend.
 
 ### Requirements:
