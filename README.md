@@ -85,7 +85,7 @@ npx expo start
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/richardfm77) 
 
-### MONSE ARRIAGA
+### MONSERRAT ARRIAGA SANTANA
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/monse-arriaga) 
 
@@ -93,7 +93,7 @@ npx expo start
 
 [![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FernandaOsorioMorales) 
 
-### MONICA 
+### MONICA MILLA
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/monica.milla.7921/)
 
